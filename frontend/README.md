@@ -1,69 +1,44 @@
-# React + TypeScript + Vite
+# AI Project Management Application Currently work in progress
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent project management system that integrates LLM-based task assistance, in-app notifications, and automated GitHub updates.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ AI-assisted task suggestions and responses
+- 🔁 Smart response caching using vector databases
+- 📬 Notification system (in-app and email-based)
+- 🔗 GitHub integration for automatic issue tracking
+- 🌐 WebSocket-enabled real-time frontend
+- 🔐 Auth and DB powered by Supabase
 
-## Expanding the ESLint configuration
+## Architecture Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Frontend communicates with backend via API and WebSockets
+- Backend handles:
+  - Request processing
+  - Rate-limited LLM queries
+  - Vector DB for response caching
+  - Notification queueing
+  - GitHub automation
+- Supabase handles auth and data storage
+- Nginx (or any load balancer) sits at the edge
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 🧠 Google gemeni - LLM
+- 🗃️ Pinecone - Vector DB
+- 🖥️ Supabase (Auth + DB)
+- 🔧 Node.js / Python (for backend functions)
+- 🌐 WebSockets
+- 📨 Cron jobs + queues for email & notifications
+- ☁️ Nginx / Load balancer
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Setup
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> WIP – coming soon use the following command to run the frontend
+> npm i
+> npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## License
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+MIT
