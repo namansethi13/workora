@@ -35,8 +35,7 @@ An intelligent project management system that integrates LLM-based task assistan
 
 ## Setup (WIP only frontend for now)
 
-> npm i
-> npm run dev
+> npm i && npm run dev
 
 ## License
 
