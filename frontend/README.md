@@ -33,9 +33,8 @@ An intelligent project management system that integrates LLM-based task assistan
 - 📨 Cron jobs + queues for email & notifications
 - ☁️ Nginx / Load balancer
 
-## Setup
+## Setup (WIP only frontend for now)
 
-> WIP – coming soon use the following command to run the frontend
 > npm i
 > npm run dev
 
