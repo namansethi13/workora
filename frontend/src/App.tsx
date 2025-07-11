@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button/button"
-import { CreateTask } from "./components"
+import { CreateTask, SideBar } from "./components"
 
 function App() {
   return (
-    <div className="flex min-h-svh flex-col items-center justify-center">
-      <CreateTask />
+    // gradient just for testing
+    <div className="flex min-h-svh from-blue-900 to-blue-950 bg-gradient-to-l p-4"> 
+      <SideBar/>
+      <div className="flex w-full h-full justify-center items-center">
+        <CreateTask />
+      </div>
     </div>
   )
 }
