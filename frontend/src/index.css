@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -74,6 +75,13 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --custom-blue: #101827;
+  --custom-light-blue: #1F2937;
+  --custom-white: #FDFDFD;
+  --custom-gray: #D1CFCF;
+  --custom-blue-hover: #2e3d52;
+  --custom-blue-dark-hover: #0E192E;
+  --custom-light-blue-hover: #17294a;
 }
 
 .dark {
@@ -118,3 +126,4 @@
     @apply bg-background text-foreground;
   }
 }
+
