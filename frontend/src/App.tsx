@@ -2,9 +2,9 @@ import { MainLayout } from "./components"
 
 function App() {
   return (
-    <div>
-      <MainLayout />
-    </div>
+      <div>
+        <MainLayout />
+      </div>
   )
 }
 
