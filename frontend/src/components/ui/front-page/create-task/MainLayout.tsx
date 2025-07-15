@@ -1,6 +1,6 @@
 import CreateTask from "./CreateTask"
-import SideBar from "./SideBar"
-import Toggler from "./Toggler"
+import Sidebar from "./Sidebar"
+import Toggler from "../../common/Toggler"
 
 function MainLayout() {
 
@@ -8,7 +8,7 @@ function MainLayout() {
         <div className="w-[100svw] flex min-h-svh bg-custom-white dark:bg-custom-blue">
 
             <aside className="h-svh w-fit p-4">
-                <SideBar />
+                <Sidebar />
             </aside>
 
             {/* Header */}
