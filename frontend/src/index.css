@@ -44,6 +44,15 @@
   --color-custom-light-blue: #1F2937;
   --color-custom-white: #FDFDFD;
   --color-custom-gray: #D1CFCF;
+  --color-custom-gray-100: #F5F5F5;
+  --color-custom-gray-200: #E5E5E5;
+  --color-custom-gray-300: #D1CFCF;
+  --color-custom-gray-400: #B0B0B0;
+  --color-custom-gray-500: #8C8C8C;
+  --color-custom-gray-600: #6B6B6B;
+  --color-custom-gray-700: #4B4B4B;
+  --color-custom-gray-800: #2E2E2E;
+  --color-custom-gray-900: #1A1A1A;
   --color-custom-blue-hover: #2e3d52;
   --color-custom-blue-dark-hover: #0E192E;
   --color-custom-light-blue-hover: #17294a;
