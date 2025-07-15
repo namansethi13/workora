@@ -5,7 +5,7 @@ import Toggler from "./Toggler"
 function MainLayout() {
 
     return (
-        <div className="w-[100svw] flex min-h-svh bg-[var(--custom-white)] dark:bg-[var(--custom-blue)]">
+        <div className="w-[100svw] flex min-h-svh bg-custom-white dark:bg-custom-blue">
 
             <aside className="h-svh w-fit p-4">
                 <SideBar />
@@ -14,7 +14,7 @@ function MainLayout() {
             {/* Header */}
             <div className="flex-1">
                 <header className="w-full ml-[-80px] py-10 px-25">
-                    <h1 className="text-9xl font-[jost] text-[var(--custom-blue)] dark:text-[var(--custom-white)]">Workora</h1>
+                    <h1 className="text-9xl font-[jost] text-custom-blue dark:text-custom-white">Workora</h1>
                 </header>
 
             <main className="p-6 mt-15 flex justify-center">
