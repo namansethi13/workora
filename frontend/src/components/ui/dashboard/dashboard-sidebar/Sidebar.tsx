@@ -1,4 +1,4 @@
-import { House, Layers2, Settings, LogOut } from 'lucide-react';
+import { House, Layers2, Settings, LogOut, SearchIcon } from 'lucide-react';
 import type { LucideIcon } from "lucide-react";
 
 interface SidebarOption {
@@ -17,6 +17,11 @@ let sidebarTopOptions : SidebarOption[] = [
         name: "Templates",
         icon: Layers2,
         key: "templates"
+    },
+    {
+        name: "Ai search",
+        icon: SearchIcon,
+        key: "ai-search"
     },
     {
         name: "Settings",
