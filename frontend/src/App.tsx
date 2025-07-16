@@ -4,7 +4,7 @@ interface User {
 }
 
 let user : User = { //this is a dummy user for now until we implement state management for logged in user
-    loggedIn: true,
+    loggedIn: false,
 }
 
 function App() {
