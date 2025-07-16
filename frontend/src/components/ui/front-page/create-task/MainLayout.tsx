@@ -1,5 +1,5 @@
 import CreateTask from "./CreateTask"
-import Sidebar from "./Sidebar"
+import Sidebar from "./SideBar"
 import Toggler from "../../common/Toggler"
 
 function MainLayout() {
