@@ -14,6 +14,7 @@ export default function Menu({ onClose }: MenuProps) {
   useEffect(() => {
     setIsVisible(true)
     document.body.style.overflow = 'hidden'
+    //cleanup function to reset body overflow
     return () => {
       document.body.style.overflow = 'auto'
     }
