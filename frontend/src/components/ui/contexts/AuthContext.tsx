@@ -6,7 +6,7 @@ const AuthContext = createContext(null);
 export const AuthContextProvider = ({ children }) => {
   const [session, setSession] = useState(null);
 
-  // ✅ SIGN UP
+  // SIGN UP
   const signUpNewUser = async (email, password) => {
     const { data, error } = await supabase.auth.signUp({
       email,
@@ -21,7 +21,7 @@ export const AuthContextProvider = ({ children }) => {
     return { success: true, data };
   };
 
-  // ✅ SIGN IN
+  // SIGN IN
   const signInUser = async ({ email, password }) => {
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -42,7 +42,7 @@ export const AuthContextProvider = ({ children }) => {
     }
   };
 
-  // ✅ SIGN OUT
+  // SIGN OUT
   const signOut = async () => {
     const { error } = await supabase.auth.signOut();
     if (error) {
@@ -50,7 +50,7 @@ export const AuthContextProvider = ({ children }) => {
     }
   };
 
-  // ✅ SESSION MANAGEMENT
+  // SESSION MANAGEMENT
   useEffect(() => {
     // Initial session fetch
     supabase.auth.getSession().then(({ data }) => {
@@ -74,5 +74,5 @@ export const AuthContextProvider = ({ children }) => {
   );
 };
 
-// ✅ Custom Hook to Consume Context
+// Custom Hook to Consume Context
 export const UserAuth = () => useContext(AuthContext);
