@@ -1,7 +1,7 @@
 import { Sidebar, SidebarToggler, Toggler } from '../components'
 import { useState } from 'react'
 
-function AdminPage() {
+function Dashboard() {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -19,10 +19,10 @@ function AdminPage() {
             <div className="absolute top-10 right-15 z-50">
                 <Toggler />
             </div>
-            <h1>Admin page</h1>
+            <h1>Dashboard page</h1>
         </main>
     </div>
   )
 }
 
-export default AdminPage
+export default Dashboard
